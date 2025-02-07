@@ -1,0 +1,272 @@
+/* filter  */
+
+.filter-icon {
+    font-weight: 700;
+}
+
+.category h2 {
+    margin: 0px !important;
+}
+
+.category {
+    position: sticky;
+    z-index: 99;
+    background-color: #fff;
+    padding: 10px !important;
+    top: 130px;
+}
+
+.filter-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff9d00;
+    margin: 0px !important;
+    line-height: 2;
+    text-decoration: underline;
+}
+
+.filter-content {
+    cursor: pointer;
+}
+
+.title {
+    margin: 0px;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.866);
+    font-weight: 500;
+    line-height: 2;
+}
+
+.filter-def {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    z-index: 999;
+    max-width: 300px;
+    position: absolute;
+    right: 5%;
+}
+
+input {
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.radio-btn {
+    display: inline-block;
+    /* padding: 0px 15px; */
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.col-md-6 {
+    padding: 0px !important;
+}
+
+.radio-btn input[type="radio"] {
+    display: none;
+}
+
+.radio-btn input[type="radio"]:checked+.radio-btn-text {
+    background-color: #ff9d00;
+    color: #fff;
+}
+
+.radio-btn-text {
+    padding: 5px 20px;
+    border-radius: 999em 999em 999em 999em;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    /* border-radius: 5px; */
+    display: block;
+}
+
+.radio-btn-text:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* Style the select button */
+.select-btn select {
+    /* Remove the default select button styling */
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the select button options */
+.select-btn select option {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the select button on hover */
+.select-btn select:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style the select button on focus */
+.select-btn select:focus {
+    outline: none;
+    border: 1px solid #ff9d00;
+    box-shadow: 0 0 10px #ff9d008a;
+    ;
+}
+
+/* Add a custom arrow to the select button */
+.select-btn select option:hover {
+    background-color: #ff9d00 !important;
+    /* Change to your desired color */
+}
+
+.apply-filter {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    background-color: #ff9d00;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+/* side content  */
+.display-items {
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    word-spacing: 2;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    transition: 0.2s all ease-in;
+    color: rgb(131, 131, 131)
+}
+
+.display-items::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #ff9d00;
+    bottom: 0px;
+    /* top: 0px; */
+    width: 100%;
+    /* left: 0px; */
+    right: 100%;
+    /* Add this line */
+    height: 2px;
+    /* Add this line */
+    z-index: 1000;
+    /* display: none; */
+    transition: 0.5s all;
+}
+
+.display-items:hover {
+    font-size: 19px;
+    color: black;
+}
+
+.display-items:hover::after {
+    right: 0%;
+}
+
+
+.explore {
+    /* background-color: #ff9d00 !important; */
+    color: #fff;
+    background-image: linear-gradient(to right, #f5914e, #e85826) !important;
+    border: none;
+}
+
+.explore:hover {
+    background-color: #ff9d00 !;
+    color: #fff;
+}
+
+
+
+
+.navbar-space {
+    margin-top: 110px;
+}
+
+
+.card-content1 {
+    box-shadow: none;
+    border: none;
+    position: relative;
+    transition: 0.2s all ease-in-out;
+}
+
+.card-content1:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* .carousel .control-prev.control-arrow:before {
+    border-right: 0px solid transparent !important;
+    content: "→"; 
+     font-size: 16px;
+    margin-right: 10px;
+}  */
+
+.control-arrow::before {
+    content: "→" !important;
+    display: none !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 50% !important;
+    background-color: #ffffffb3;
+    padding: 34px 13px !important;
+    font-size: 26px;
+    /* bottom: 50% !important; */
+    margin-top: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50% !important;
+    /* right: 50% !important; */
+    /* transform: translate(50%, -50%); */
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 0px solid #fff !important;
+
+}
+
+li {
+    list-style: none;
+}
+
+.card-content1::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    border: 0.1px solid rgba(128, 128, 128, 0.286);
+    /* top: 0px; */
+    transform: scaleY(0.5);
+    width: 100%;
+    /* left: 10px;
+    right: 20px; */
+}

@@ -1,0 +1,72 @@
+.footer{
+    margin-top: 100px;
+    background-color: #fff;
+    border-top: 1px solid;
+}
+
+.company .heading h6 {
+    font-size: 14px;
+    color: #a5afb6;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.company-content a {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    color: #7f7f7f;
+    line-height: 2;
+    transition: 0.3s all ease-in;
+}
+.company-content a:hover{
+    color: #e85826;
+}
+
+a svg {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.terms{
+font-weight: 600;
+color: #545353;
+}
+.subscribe .email-heading h4 {
+    font-size: 16px;
+    color: #7f7f7f;
+}
+
+.form input {
+    border: none;
+    background-color: #e3e8eb83;
+    padding: 10px 15px;
+    opacity: 0.5;
+    width: 60% !important;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form input:focus {
+    outline: none;
+    border: 2px solid #f5914e
+}
+
+.form button {
+    border: none;
+    background-image: linear-gradient(to right, #e3e8eb83, #e3e8eb83);
+    /* background-color:#e3e8eb83; */
+    padding: 10px 15px;
+    border-radius: 0px 5px 5px 0px;
+    transition: 1s all ease-in;
+}
+
+.form button:hover {
+    background-image: linear-gradient(to right, #f5914e, #e85826);
+}
+
+.download-app .download-google img   {
+    /* height: 12%; */
+    width: 60%;
+}
+.download-apple img{
+    width: 34%;
+}
