@@ -35,7 +35,7 @@ export default function Foodname() {
                 <Row className='justify-content-around'>
                     {
                         arr.map((elem) => {
-                            const linkeditem = '/Foodinfo/' + elem.
+                            const linkeditem = '/foodinfo/' + elem.
                                 idMeal;
                             return (
                                 <Card style={{ width: '18rem' }} className='card-content mb-4' key={elem.strCategory}>

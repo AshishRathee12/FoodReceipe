@@ -34,10 +34,10 @@ export default function Explore() {
                 <Row className='justify-content-around'>
                     {
                         arr.map((elem) => {
-                            const linkeditem = '/Foodinfo/' + elem.
+                            const linkeditem = '/foodinfo/' + elem.
                                 idMeal;
                             return (
-                                <Card Card style={{ width: '18rem' }} className='card-content mb-4' key={elem.idMeal}>
+                                <Card style={{ width: '18rem' }} className='card-content mb-4' key={elem.idMeal}>
                                     <Card.Img variant="top" src={elem.strMealThumb} />
                                     <Card.Body>
                                         <Card.Title className='mb-3'>{elem.

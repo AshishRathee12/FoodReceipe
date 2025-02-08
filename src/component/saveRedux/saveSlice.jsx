@@ -15,7 +15,6 @@ const saveSlice = createSlice({
         //add to cart
         addToCart: (state, action) => {
             const IteamIndex = state.carts.findIndex((iteam) => iteam.idMeal === action.payload.idMeal);
-            console.log(IteamIndex)
             if (IteamIndex == -1) {
                 state.carts.push(action.payload)
             }

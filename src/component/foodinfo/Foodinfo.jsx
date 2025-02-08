@@ -33,7 +33,8 @@ export default function Foodinfo() {
     }
 
     useEffect(() => {
-        const foodname = id.id
+        const foodname = id.id;
+        console.log(foodname)
         getdata(foodname);
     }, []);
 
@@ -45,7 +46,6 @@ export default function Foodinfo() {
 
     const allready = () => {
         toast("Remove it from Cart")
-
     }
 
 
