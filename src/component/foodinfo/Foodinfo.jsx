@@ -86,7 +86,7 @@ export default function Foodinfo() {
                                             </div>
                                             <div className="save-btn mt-3">
                                                 {carted.some((item) => item.idMeal === elem.idMeal) ? (
-                                                    <button className='btn' onClick={allready} >Saved<TiTick size={24} color='green'/></button>
+                                                    <button className='btn' onClick={allready} >Saved<TiTick size={24} color='green' /></button>
                                                 ) : (
                                                     <button className='btn btn-primary' onClick={() => savereceipe(elem)}> save <IoMdAdd /></button>
                                                 )}
@@ -114,5 +114,13 @@ export default function Foodinfo() {
             </Container>
         )
 
+    }
+    else {
+        return (
+            <div className="container mt-5">
+                <h1 className="text-center">No Recipes Found</h1>
+
+            </div>
+        )
     }
 }

@@ -19,14 +19,14 @@ export const counterSlice2 = createSlice({
     },
     extraReducers: (builder) => {
         builder
-            .addCase(getAllData.pending, (state) => {
+            .addCase(getAllData2.pending, (state) => {
                 state.loading = true;
             })
-            .addCase(getAllData.fulfilled, (state, action) => {
+            .addCase(getAllData2.fulfilled, (state, action) => {
                 state.loading = false;
                 state.users = action.payload;
             })
-            .addCase(getAllData.rejected, (state, action) => {
+            .addCase(getAllData2.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.error.message; // use action.error.message instead of action.payload
             });
